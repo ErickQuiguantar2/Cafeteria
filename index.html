@@ -2,10 +2,8 @@
 <html lang ="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-escalable=no, maximun-scale=1.0, minimum-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
         <title>Cafe DulceAroma</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="EstiloCss/estilo.css">
     </head>
@@ -13,13 +11,13 @@
     <body>
         <header>
             <div class="contenedor">
-                <nav>
+                <nav class="menu">
                     <a href="#" id="btn-acerca-de"> Acerca de </a>
                     <a href="#" id="btn-menu"> Menu </a>
                     <a href="#" id="btn-galeria"> Galeria </a>
                     <a href="#" id="btn-ubicacion"> Ubicacion </a>
                 </nav>
-            <div class="derecho">
+            <div class="texto">
                 <h1> Cafe <span> San francisco </span></h1>
                 <h3>Un recuerdo del tiempo, donde el corazon se abriga entre cafe y recuerdos</h3>
             </div>
@@ -32,7 +30,7 @@
             <section class="acerca-de" id="acerca-de">
                 <div class="contenedor">
                     <div class="foto">
-                        <img src="G:\Xammp\htdocs\Cafeteria\imagen\cafe-1869656_640.jpg" width="400" height="300" alt="Acerca de ">
+                        <img src="imagen/cafe-1869656_640.jpg" width="400" height="300" alt="Acerca de ">
                     </div>
                     <article>
                         <h3>Acerca de</h3>
@@ -58,49 +56,51 @@
             </section>
             <!--./Fin de-->
             <!--Inico menu-->
-            <section>
-                <div>
+            <section class="menu">
+                <div class="contenedor">
                     <h3 id="platillos">Menu</h3>
-                    <div> 
-                        <div>
-                            <p>De comer</p>
+                    <div class="contenedor-menu"> 
+                        
+                        <div class="contenedor-menu2">
+                            <p class="categoria">De comer</p>
                            <article>
-                            <p>Arroz con camaron</p>
-                            <p>$8.50</p>
-                            <p>el arroz cn camaron tiene los siguientes ingredientes arroz, camaron</p>
-                        <div>
-                            <p>Encebollado</p>
-                            <p>$3.50</p>
-                            <p>El encebollado tiene los siguientes ingredientes pescado, cebolla, arroz, yuca, chifles</p>
+                            <div class="platillo">
+                            <p class="nombre">Arroz con camaron</p>
+                            <p class="precio">$8.50</p>
+                            <p class="descripcion">el arroz cn camaron tiene los siguientes ingredientes arroz, camaron</p>
+                        <div class="platillo">
+                            <p class="nombre">Encebollado</p>
+                            <p class="precio"> $3.50</p>
+                            <p class="descripcion">El encebollado tiene los siguientes ingredientes pescado, cebolla, arroz, yuca, chifles</p>
                         </div>
-                        <div>
-                            <p>Encebollado Mixto</p>
-                            <p>$6.50</p>
-                            <p>El encebollado tiene los siguientes ingredientes pescado, cebolla, arroz, yuca, chifles, camaron, pulpo, almejas</p>
+                        <div class="platillo">
+                            <p class="nombre">Encebollado Mixto</p>
+                            <p class="precio">$6.50</p>
+                            <p class="descripcion">El encebollado tiene los siguientes ingredientes pescado, cebolla, arroz, yuca, chifles, camaron, pulpo, almejas</p>
                         </div>
                            </article>
                            <!--./Fin de la seccion de comer-->
                            <article>
-                            <p>Bebidas</p>
-                        <div>
-                            <p>Jugos Naturales</p>
-                            <p>$3.00</p>
+                            <p class="categoria">Bebidas</p>
+                        <div class="platillo">
+                            <p class="nombre">Jugos Naturales</p>
+                            <p class="precio">$3.00</p>
                         </div>
-                        <div>
-                            <p>Bebidas personales</p>
-                            <p>$2.50</p>
+                        <div class="platillo">
+                            <p class="nombre">Bebidas personales</p>
+                            <p class="precio">$2.50</p>
                         </div>
-                        <div>
-                            <p>Pilsener</p>
-                            <p>$3.50</p>
+                        <div class="platillo">
+                            <p class="nombre">Pilsener</p>
+                            <p class="precio">$3.50</p>
                         </div>
-                        <div>
-                            <p>limonadas</p>
-                            <p>$1.50</p>
+                        <div class="platillo">
+                            <p class="nombre">limonadas</p>
+                            <p class="precio">$1.50</p>
                         </div>
-                        <div>
-                            <p>Bebidas energeticas</p>
-                            <p>$1.75</p>
+                        <div class="platillo">
+                            <p class="nombre">Bebidas energeticas</p>
+                            <p class="precio">$1.75</p>
                         </div>
                            </article>
                         </div>
@@ -109,59 +109,59 @@
             </section>
             <!--./Fin Menu-->
             <!--Inicio Galeria-->
-            <section id="Galeria">
-                <div>
-                    <img src="G:\Xammp\htdocs\Cafeteria\imagen\istockphoto-1130595856-612x612.jpg" width="400" height="300" alt="">
+            <section class="Galeria" id="Galeria">
+                <div class="foto">
+                    <img src="./imagen/istockphoto-1130595856-612x612.jpg" width="400" height="300" alt="">
                 </div>
-                <div>
-                    <img src="G:\Xammp\htdocs\Cafeteria\imagen\istockphoto-1216782625-612x612.jpg" width="400" height="300" alt="">
+                <div class="foto">
+                    <img src="imagen/istockphoto-1400194993-612x612.jpg" width="400" height="300" alt="">
                 </div>
-                <div>
-                    <img src="G:\Xammp\htdocs\Cafeteria\imagen\istockphoto-1400194993-612x612.jpg" width="400" height="300" alt="">
+                <div class="foto">
+                    <img src="imagen/istockphoto-1400194993-612x612.jpg" width="400" height="300" alt="">
                 </div>
-                <div>
-                    <img src="G:\Xammp\htdocs\Cafeteria\imagen\istockphoto-1428594094-612x612.jpg"  width="400" height="300"alt="">
+                <div class="foto">
+                    <img src="imagen/istockphoto-1428594094-612x612.jpg"  width="400" height="300"alt="">
                 </div>
-                <div>
-                    <img src="G:\Xammp\htdocs\Cafeteria\imagen\istockphoto-1467199060-612x612.jpg" width="400" height="300" alt="">
+                <div class="foto">
+                    <img src="imagen/istockphoto-1434203329-612x612.jpg" width="400" height="300" alt="">
                 </div>
-                <div>
-                    <img src="G:\Xammp\htdocs\Cafeteria\imagen\istockphoto-1467199060-612x612.jpg" width="400" height="300" alt="">
+                <div class="foto">
+                    <img src="imagen/istockphoto-1467199060-612x612.jpg" width="400" height="300" alt="">
                 </div>
-                <div>
-                    <img src="G:\Xammp\htdocs\Cafeteria\imagen\istockphoto-1467739359-612x612.jpg" width="400" height="300" alt="">
+                <div class="foto">
+                    <img src="imagen/istockphoto-1467739359-612x612.jpg" width="400" height="300" alt="">
                 </div>
-                <div>
-                    <img src="G:\Xammp\htdocs\Cafeteria\imagen\istockphoto-1552871673-612x612.jpg" width="400" height="300" alt="">
+                <div class="foto">
+                    <img src="imagen/istockphoto-1552871673-612x612.jpg" width="400" height="300" alt="">
                 </div>
             </section>
             <!--Seccio ubicacion-->
-            <section id="Ubicacion">
-                <div>
-                    <h3>Ubicacion</h3>
-                    <div>
-                        <p></p>
-                        <p>(+593)0983093539</p>
-                        <p>cafedulcearoma@gmail.com</p>
+            <section class="Ubicacion" id="Ubicacion">
+                <div class="contenedor">
+                    <h3 class="titulo">Ubicacion</h3>
+                    <div class="direccion">
+                        <p class="calle">Eso <br/> 548-520</p><br>
+                        <p class="telefono">(+593)0983093539</p>
+                        <p class="correo">cafedulcearoma@gmail.com</p>
                     </div>
-                    <div>
+                    <div class="horarios">
                         <h4>Horarios</h4>
-                        <p>Lunesa Viernes <br>7:00 - 21:00</p>
-                        <p>Sabads y Domingos <br>11:00 - 23:00</p>
+                        <p class="entre-semana">Lunesa Viernes <br>7:00 - 21:00</p>
+                        <p class="fin-semana">Sabads y Domingos <br>11:00 - 23:00</p>
                     </div>
                 </div>
             </section>
             <!--./Contactos-->
             <!--Inicio Mapa-->
-            <section>
+            <section class="mapa">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.8133818095575!2d-78.44339812618146!3d-0.0901488354860519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d58f05ad59e061%3A0xb96d149c117ff25e!2sCafeter%C3%ADa%20Tierrita%20Linda!5e0!3m2!1ses!2sec!4v1744052461266!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>s            </section>
             <!--Fin seccion mapa-->
         </section>
         <!--Fin Seccion Main-->
         <footer>
-            <div>
-                <div>
-                    <p>&COPY; TODOS LOS DERECHS RESERVADOS</p>
+            <div class="contenedor">
+                <div class="copyright">
+                    <p>&copy; Todos los derechos reservados</p>
                 </div>
             </div>
         </footer>
